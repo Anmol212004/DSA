@@ -7,8 +7,8 @@ class Solution {
         }
         for (int x : map.keySet()) {
             if (map.get(x) != 1) {
-                int freq = map.get(x);
-                count += freq * (freq - 1) / 2;
+                int n = map.get(x);
+                count += n * (n - 1) / 2;
             }
         }
         return count;
